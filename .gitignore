@@ -1,10 +1,10 @@
 /target
 **/*.rs.bk
 Cargo.lock
+.idea/
 
 #emacs
 *~
 
 #Microsoft Visual Code IDE
 /.vscode/
-
