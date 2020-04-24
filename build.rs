@@ -12,11 +12,11 @@ use std::path::PathBuf;
 fn main() {
     //build zfp with cmake
     #[cfg(not(feature = "cuda"))]
-    let zfp = cmake::build("zfp-0.5.4");
+    let zfp = cmake::build("zfp-0.5.5");
 
     //enable CUDA for faster compression/decompression
     #[cfg(feature = "cuda")]
-    let zfp = Config::new("zfp-0.5.4")
+    let zfp = Config::new("zfp-0.5.5")
         .define("ZFP_WITH_CUDA", "ON")
         .build();
 
